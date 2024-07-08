@@ -25170,7 +25170,7 @@ const gD = ({ position: c }) => {
 };
 class TD extends HTMLElement {
   constructor() {
-    super(), this.attachShadow({ mode: "open" });
+    super(), this.attachShadow({ mode: "closed" });
   }
   connectedCallback() {
     const p = this.getPropsFromAttributes();
@@ -25187,7 +25187,7 @@ class TD extends HTMLElement {
 }
 class wD extends HTMLElement {
   constructor() {
-    super(), this.attachShadow({ mode: "open" });
+    super(), this.attachShadow({ mode: "closed" });
   }
   connectedCallback() {
     const p = this.getPropsFromAttributes();
@@ -25204,7 +25204,7 @@ class wD extends HTMLElement {
 }
 class OD extends HTMLElement {
   constructor() {
-    super(), this.attachShadow({ mode: "open" });
+    super(), this.attachShadow({ mode: "closed" });
   }
   connectedCallback() {
     const p = this.getPropsFromAttributes();
