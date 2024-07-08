@@ -25173,8 +25173,8 @@ class TD extends HTMLElement {
     super(), this.attachShadow({ mode: "closed" });
   }
   connectedCallback() {
-    const p = this.getPropsFromAttributes();
-    qc.createRoot(this.shadowRoot).render(/* @__PURE__ */ rr.jsx(gD, { ...p }));
+    const p = this.getPropsFromAttributes(), h = qc.createRoot(this.shadowRoot);
+    console.log("MushroomWebComponent", p), h.render(/* @__PURE__ */ rr.jsx(gD, { ...p }));
   }
   getPropsFromAttributes() {
     const p = {};
@@ -25190,8 +25190,8 @@ class wD extends HTMLElement {
     super(), this.attachShadow({ mode: "closed" });
   }
   connectedCallback() {
-    const p = this.getPropsFromAttributes();
-    qc.createRoot(this.shadowRoot).render(/* @__PURE__ */ rr.jsx(AD, { ...p }));
+    const p = this.getPropsFromAttributes(), h = qc.createRoot(this.shadowRoot);
+    console.log("ChestWebComponent", p), h.render(/* @__PURE__ */ rr.jsx(AD, { ...p }));
   }
   getPropsFromAttributes() {
     const p = {};
@@ -25207,8 +25207,8 @@ class OD extends HTMLElement {
     super(), this.attachShadow({ mode: "closed" });
   }
   connectedCallback() {
-    const p = this.getPropsFromAttributes();
-    qc.createRoot(this.shadowRoot).render(/* @__PURE__ */ rr.jsx(RD, { ...p }));
+    const p = this.getPropsFromAttributes(), h = qc.createRoot(this.shadowRoot);
+    console.log("GnomeWebComponent", p), h.render(/* @__PURE__ */ rr.jsx(RD, { ...p }));
   }
   getPropsFromAttributes() {
     const p = {};
