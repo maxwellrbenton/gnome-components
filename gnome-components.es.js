@@ -25140,6 +25140,7 @@ const gD = ({ position: c }) => {
     /* @__PURE__ */ fr.jsx(yy, { in: !0, timeout: Math.random() * 3e3, children: /* @__PURE__ */ fr.jsx(
       "img",
       {
+        className: "__chest--image",
         src: S ? yD : CD,
         alt: "chest",
         onClick: F
