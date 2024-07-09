@@ -25129,10 +25129,10 @@ const gD = ({ position: c }) => {
       Y(!1);
     }, ED);
   };
-  return /* @__PURE__ */ fr.jsxs("div", { className: `__chest-${b}`, children: [
+  return /* @__PURE__ */ fr.jsxs("div", { id: `__chest-${b}`, className: "__chest", children: [
     /* @__PURE__ */ fr.jsx("style", { children: SD }),
     /* @__PURE__ */ fr.jsx("style", { children: `
-          .__chest-${b} {
+          #__chest-${b} {
             left: ${T.x}px;
             top: ${T.y}px;
           }
@@ -25140,7 +25140,6 @@ const gD = ({ position: c }) => {
     /* @__PURE__ */ fr.jsx(yy, { in: !0, timeout: Math.random() * 3e3, children: /* @__PURE__ */ fr.jsx(
       "img",
       {
-        className: "__chest",
         src: S ? yD : CD,
         alt: "chest",
         onClick: F
