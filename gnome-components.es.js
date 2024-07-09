@@ -25129,12 +25129,12 @@ const gD = ({ position: c }) => {
   closed: h
 }) => {
   const { height: y, width: I } = dE(), b = crypto.randomUUID(), [T, C] = bn.useState(
-    h ? !1 : p || !1
+    h === "true" ? !1 : p === "true" || !1
   ), [Y] = bn.useState(
     c || fE(y, I)
   ), F = () => {
-    C(h ? !0 : !p), setTimeout(() => {
-      C(h ? !1 : !!p);
+    C(h === "true" ? !0 : p !== "true"), setTimeout(() => {
+      C(h === "true" ? !1 : p === "true");
     }, ED);
   };
   return console.warn({ opened: p, closed: h, cachedOpened: T, cachedPosition: Y }), /* @__PURE__ */ fr.jsxs("div", { id: `__chest-${b}`, className: "__chest", children: [
