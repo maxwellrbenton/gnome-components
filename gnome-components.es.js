@@ -25167,7 +25167,10 @@ const gD = ({ position: c }) => {
           .__gnome-${Y} {
             left: ${F?.x}px;
             top: ${F?.y}px;
-            ${F?.facing === "left" ? "transform: rotateY(180deg);" : ""}
+          }
+
+          .__gnome--image {
+            ${F?.facing === "left" && "transform: rotateY(180deg);"}
           }
         ` }),
     /* @__PURE__ */ Mr.jsx(
