@@ -25174,7 +25174,7 @@ const gD = ({ position: c }) => {
       "img",
       {
         className: `__gnome __gnome-${Y}`,
-        src: y === 1 ? xD : bD,
+        src: y == 1 ? xD : bD,
         alt: "a gnome"
       }
     )
