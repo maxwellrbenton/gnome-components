@@ -25192,12 +25192,6 @@ class wD extends HTMLElement {
     const p = kE(this);
     qc.createRoot(this.shadowRoot).render(/* @__PURE__ */ _r.jsx(gD, { ...p }));
   }
-  disconnectedCallback() {
-    console.log("Custom element removed from page.");
-  }
-  attributeChangedCallback(p, h, y) {
-    console.log("attribute changed", p, h, y, this);
-  }
 }
 class OD extends HTMLElement {
   constructor() {
@@ -25206,12 +25200,6 @@ class OD extends HTMLElement {
   connectedCallback() {
     const p = kE(this);
     qc.createRoot(this.shadowRoot).render(/* @__PURE__ */ _r.jsx(ID, { ...p }));
-  }
-  disconnectedCallback() {
-    console.log("Custom element removed from page.");
-  }
-  attributeChangedCallback(p, h, y) {
-    console.log("attribute changed", p, h, y, this);
   }
 }
 class kD extends HTMLElement {
@@ -25222,13 +25210,8 @@ class kD extends HTMLElement {
     const p = kE(this);
     qc.createRoot(this.shadowRoot).render(/* @__PURE__ */ _r.jsx(TD, { ...p }));
   }
-  disconnectedCallback() {
-    console.log("Custom element removed from page.");
-  }
-  attributeChangedCallback(p, h, y) {
-    console.log("attribute changed", p, h, y, this);
-  }
 }
 customElements.define("gc-mushroom", wD);
 customElements.define("gc-chest", OD);
 customElements.define("gc-gnome", kD);
+console.warn("Gnome elements available: gc-mushroom, gc-chest, gc-gnome");
